@@ -1,0 +1,12 @@
+message Vector2 {
+  optional float x = 1;
+  optional float y = 2;
+}
+
+message Entity {
+  optional Vector2 position = 1;
+  optional Vector2 velocity = 2;
+
+  optional float angle = 3;
+  optional float angularVelocity = 4;
+}
