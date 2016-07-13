@@ -3,7 +3,7 @@ message Vector2 {
   optional float y = 2;
 }
 
-message Entity {
+message Body {
   optional Vector2 position = 1;
   optional Vector2 velocity = 2;
 
