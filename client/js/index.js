@@ -49,3 +49,20 @@ for (let i = 0; i < 1000; i++) {
 }
 
 draw(ctx, state);
+
+
+function createClient() {
+  const socket = new WebSocket(`ws://${window.location.hostname}:8080`);
+
+  socket.addEventListener('open', () => {
+    console.log('socket:open');
+
+    socket.addEventListener('message', event => {
+      console.log(event);
+    });
+
+    socket.addEventListener('close', () => console.log('socket:close'));
+  });
+}
+
+createClient();
