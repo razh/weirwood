@@ -1,0 +1,10 @@
+message KeyboardEvent {
+  optional uint32 timestamp = 1;
+  optional uint32 key = 2;
+}
+
+message MouseEvent {
+  optional uint32 timestamp = 1;
+  optional float x = 2;
+  optional float y = 3;
+}
